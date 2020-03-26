@@ -69,10 +69,11 @@
 .media_wrap .intro .intro_con { font-size:15px; font-size:1.5rem; line-height: 21px; line-height: 2.1rem; letter-spacing: 0.040em; font-weight: 300; color: #FFFFFF; margin-top:19px;}
 .media_wrap .intro .intro_con:after { display: block; width:83px; height: 2px; margin: 31px auto 0px; content: ''; background: #FFFFFF; }
 
-.media_wrap .media_play_btn a{ padding: 21px 0 25px;}
+.media_wrap .media_play_btn_wrap { position: relative; display: inline-block; width:60px; height: 60px;  border-radius: 50%; background: #31aae2;}
+.media_wrap .media_play_btn img { position: absolute; top:22px; left: 25px;}
 .media_wrap .media_main_con { font-size:18px; font-size:1.8rem; line-height:24px; line-height:2.4rem; font-weight: 300; color: #FFFFFF; text-align: center; margin-top: 30px;}
 
-.media_wrap .media_select_bar_wrap .media_select_bar_wrap_wrap { display: inline-block; }
+.media_wrap .media_select_bar_wrap .media_select_bar_wrap_wrap { display: inline-block;}
+.media_wrap .media_select_bar_wrap .media_select_bar_wrap_wrap::after { margin-right: 10px; content: '';}
 .media_wrap .media_select_bar_wrap .media_select_bar { display:block; width: 176px; height: 1px; background: #FFFFFF; content: ''; margin-top: 102px; }
 .media_wrap .media_select_bar_wrap .media_select_bar_con{ margin-top: 18px; color: #FFFFFF; font-size:13px; font-size:1.3rem; line-height:19px; line-height:1.9rem; font-weight: 200; }
-
