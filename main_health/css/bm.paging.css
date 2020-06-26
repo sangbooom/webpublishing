@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* paging */
+.paging{margin-top:20px;}
+.button_container{font-size:0; white-space:nowrap; text-align: center;}
+.button_container li { position: relative; display: inline-block; text-align: center; background-image: url( ../img/page-navi-bg.png ); background-repeat: no-repeat;
+    cursor: pointer; font-weight: 400; width:25px; height:25px; box-sizing: border-box; transition: all .3s;}
+.button_container li.btn_singlePage { z-index: 0; text-indent: -10000px; width:25px; height:25px; border:1px solid #d5d5db; border-radius:50%;}
+.button_container li.btn_singlePage.btn_firstPage { background-position: 8px 8px; margin-right:10px;}
+.button_container li.btn_singlePage.btn_prevPage { background-position: -35px 8px; margin-right:10px;}
+.button_container li.btn_singlePage.btn_nextPage { background-position: right -36px top 8px; margin-left:10px;}
+.button_container li.btn_singlePage.btn_lastPage { background-position: right 7px top 8px; margin-left:10px;}
+.button_container li.btn_page {background: none; color: #b5b5b5; font-size: 12px; line-height:8px; width:auto; height: 14px; padding-right:2px; padding-left:2px; z-index: 1; border-bottom:1px solid transparent;  margin-right:5px; margin-left:5px; margin-top:5px;}
+/*.button_container li.btn_page.selected { border:1px solid #0798c8; background-color:#fff; border-radius: 50%;}*/
+.button_container li.btn_page:hover{color:#000; border-bottom-color:#000;}
+.button_container li.btn_singlePage:hover{background-image:url('../img/page-navi-bg_h.png'); background-color:#3376bc; border-color:#3376bc;}
+
+
+
+@media all and (min-width:992px){
+    /* paging */
+    .paging{margin-top:40px;}
+    .button_container li {width:33px; height:33px;}
+    .button_container li.btn_singlePage {width:33px; height:33px;}
+    .button_container li.btn_singlePage.btn_firstPage { background-position: 12px 12px; }
+    .button_container li.btn_singlePage.btn_prevPage { background-position: -31px 12px; margin-right:20px;}
+    .button_container li.btn_singlePage.btn_nextPage { background-position: right -32px top 12px; margin-left:20px;}
+    .button_container li.btn_singlePage.btn_lastPage { background-position: right 11px top 12px; }
+    .button_container li.btn_page {font-size: 14px;  height: 16px; margin-right:10px; margin-left:10px; margin-top:3px;}
+}

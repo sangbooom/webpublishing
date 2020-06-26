@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 기본 Table Style */
+/* List Table */
+table.tb_list0 {text-align: center; width: 100%;}
+table.tb_list0 th {text-align: center; font-size:11px; font-size:1.1rem; line-height:1.7rem; padding-top:15px; padding-bottom:15px; vertical-align: middle; color: #000; min-width:105px; box-sizing: border-box; background-color: #f8f9fb; font-weight:400;}
+table.tb_list0 td {padding:17px 9px; text-align: center; vertical-align: middle; font-size:13px; font-size:1.3rem; line-height:1.9rem; background-color: #fff; border-top:1px solid #f0f3f5;}
+table.tb_list0 td.pink_txt {color: #ec407a; font-weight: bold;}
+table.tb_list0 td.black_txt {color: #263238;}
+table.tb_list0 td.title {text-align: left; padding-left: 10px;}
+table.tb_list0 td .title a {display: inline-block; width: 470px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; color: #263238;}
+table.tb_list0 td .nodata {width: 100%; padding: 40px; font-size: 13px; line-height: 1; border: 2px solid #d1d1e2; border-top: none;}
+
+/* Detail Table */
+table.tb_detail0 {background-color: #fff; text-align: left; width: 100%; font-size: 13px; color: #000;}
+table.tb_detail0 tr:first-child {background-color: #f8f9fb;}
+table.tb_detail0 th {height: 56px; padding-left: 5%; padding-right: 2%; max-width: 220px; border-top: 1px solid #f0f3f5; text-align: left; color: #000000; min-width: 145px; font-weight: normal;}
+table.tb_detail0 td {border-top: 1px solid #f0f3f5; padding: 9px;}
+table.tb_detail0 td .contents_con {line-height: 1.5; margin: 10px 0px; min-height: 150px;}
+table.tb_detail0 td.btn_con_td {border-top: 1px solid #e5e5e5; text-align: center;}
+
+/* Filter Table */
+table.filter_table {text-align:center; width:100%;}
+table.filter_table th{border-left:1px solid #f0f3f5; padding-left: 50px; font-size:13px; font-size:1.3rem; line-height:1.9rem; height: 56px; text-align: left; vertical-align: middle; color: #000; min-width:105px; box-sizing: border-box;}
+table.filter_table tr{background-color: #fbfcfd;}
+table.filter_table tr:first-child{border-bottom:1px solid #e6ecee; background-color: #f8f9fb;}
+table.filter_table th:first-child{border-left:none;}
+table.filter_table td{padding:9px; text-align: left; vertical-align: middle; font-size:13px; font-size:1.3rem; line-height:1.9rem;}
+table.filter_table .txt_left{text-align:left; }
+table.filter_table .td_search{padding: 10px 0px; text-align: center;}

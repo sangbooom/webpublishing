@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+
+작성자 : 황진규
+작성일 : 2017-02-14
+버전 : 0.1v
+
+1. 버튼 기본 스타일
+ - btn_guide : 일반버튼
+ - btn_small : panel이나 view/list 등의 영역 안에 들어있는 버튼
+
+2. 기능에 따른 색상 부여
+ - add/update :        pink
+ - get/select/search :  blue
+ - delete :               black
+ - cancel :               gray
+ - option1 :             lime
+ - option2 :             navy
+
+3. 기능에 따른 아이콘 부여
+ - icon_search
+ - icon_write
+ - icon_edit
+ - icon_view
+ - icon_delete
+ - icon_confirm
+ - icon_close
+ - icon_attach
+ - icon_download
+
+4. 적용 형태
+ - <div class="btn_guide pink icon_write">추가/등록</div>
+ - <div class="btn_guide blue icon_search">검색</div>
+ - <div class="btn_guide black icon_delete">삭제</div>
+ - <div class="btn_guide lime icon_view">미리보기</div>
+
+*/
+
+
+
+/* DEFAULT */
+.btn_guide {
+    display: inline-block; vertical-align:middle; height: 42px; padding-right:16px; padding-left:16px;
+    text-align: center; font-size: 15px; font-size:1.5rem; line-height: 40px; line-height:4.0rem; font-weight:bold; color: #000;
+    border:1px solid #000; border-radius: 0px; box-sizing: border-box;
+    cursor: pointer; outline: none; background-color:transparent; transition: border 0s, background 0.3s, color 0.3s;
+}
+.btn_guide:hover {color:#a47f54;}
+.btn_small {
+    display: inline-block; vertical-align:middle; height: 42px; padding-right:16px; padding-left:16px;
+    text-align: center; font-size: 15px; font-size:1.5rem; line-height: 40px; line-height:4.0rem; font-weight:bold; color: #000;
+    border:1px solid #000; border-radius: 0px; box-sizing: border-box;
+    cursor: pointer; outline: none; background-color:transparent; transition: border 0s, background 0.3s, color 0.3s;
+}
+
+
+/* ICON */
+.btn_guide[class*="icon_"] {padding-right: 33px; background-repeat: no-repeat; background-position: right 15px center; text-align: left;}
+.btn_small[class*="icon_"] {padding-right: 33px; background-repeat: no-repeat; background-position: right 15px center; text-align: left;}
+.icon_search {background-image: url("../img/icon_search.png");}
+.icon_write {background-image: url("../img/icon_write.png");}
+.icon_edit {background-image: url("../img/icon_edit.png");}
+.icon_view {background-image: url("../img/icon_view.png");}
+.icon_delete {background-image: url("../img/icon_delete.png");}
+.icon_confirm {background-image: url("../img/icon_check.png");}
+.icon_close {background-image: url("../img/go_to_list_icon.png");}
+.icon_attach {background-image: url("../img/icon_attach.png");}
+.icon_download {background-image: url("../img/icon_download.png");}
+.icon_list {background-image: url("../img/go_to_list_icon.png");}
+/* 2018-06-12 신규 추가 */
+.icon_arrow {background-image: url("../img/icon_arrow.png");}
+.btn_small_download_icon{margin-left:11px;}
+.btn_small_download_icon.hover{display:none;}
+.btn_small_download_icon > img{margin-bottom:3px;}
+.btn_small_arrow_icon{margin-left:11px;}
+.btn_small_arrow_icon.hover{display:none;}
+.btn_small_arrow_icon > img{margin-bottom:3px;}
+
+
+/* BACKGROUND-COLOR, COLOR */
+.btn_guide.pink  {background-color: transparent;}
+.btn_guide.blue  {background-color: transparent;}
+.btn_guide.black {background-color: transparent;}
+.btn_guide.gray  {background-color: transparent;}
+.btn_guide.lime  {background-color: transparent;}
+.btn_guide.navy  {background-color: transparent;}
+
+.btn_small.pink  {background-color: transparent;}
+.btn_small.blue  {background-color: transparent;}
+.btn_small.black {background-color: transparent;}
+.btn_small.gray  {background-color: transparent;}
+.btn_small.lime  {background-color: transparent;}
+.btn_small.navy  {background-color: transparent;}
+
+
+/* custom */
+.ext_field_value.file_input {visibility: hidden; position: absolute; z-index: -10;}
+input.ext_file_name.file_text {border:1px solid #e3e6e9; height:30px; margin-bottom:4px;}
+.btn_guide.icon_arrow.long{width:134px; padding-right:0;}
+.btn_small.small{width:111px; padding-left:15px; padding-right:15px; height:32px; line-height:3.0rem;}
+.btn_small.short{width:56px; padding-left:0; padding-right:0;}
+.btn_small.long{width:102px;}
+.btn_small.super_long{width:100%; padding-right:0; padding-left:0; margin-right:0 !important; margin-left:0 !important; margin-bottom:5px !important; text-align: center;}
+.btn_small.super_long:last-child{margin-bottom:0 !important;}
+
+
+
+@media all and (min-width:992px){
+    /* hover */
+    .btn_guide:hover {background-color:#3376bc; color:#fff; border-color:transparent;}
+    .btn_small:hover {background-color:#3376bc; color:#fff; border-color:transparent;}
+    .icon_arrow:hover {background-image: url("../img/icon_arrow_hover.png");}
+
+    .in_download:hover .btn_small_download_icon{display:none;}
+    .in_download:hover .btn_small_download_icon.hover{display:inline;}
+    .in_arrow:hover .btn_small_arrow_icon{display:none;}
+    .in_arrow:hover .btn_small_arrow_icon.hover{display:inline;}
+}
