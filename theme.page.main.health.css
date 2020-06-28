@@ -96,14 +96,14 @@
 .facility_wrap .intro .intro_title { font-size:30px; font-size:3.0rem; line-height:36px; line-height:3.6rem; letter-spacing: 0.040em; font-family:'Open Sans'; font-weight: 700; }
 .facility_wrap .intro .intro_desc { font-size:15px; font-size:1.5rem; line-height: 21px; line-height: 2.1rem; letter-spacing: 0.040em; font-weight: 300; color: #969595; margin-top:19px;}
 .facility_wrap .intro .intro_desc:after { display: block; width:83px; height: 2px; margin: 31px auto 0px; content: ''; background: #31aae2; }
-.facility_wrap .facility_card_wrap { display: flex; flex-wrap: wrap; margin-top: 50px;}
+.facility_wrap .facility_card_wrap { display: flex; flex-wrap: wrap; padding-top: 50px;}
 
 .facility_card_slide { top: 100%; position: relative; transition: top 0.2s ease; background: rgba(0,0,0,0.6); padding: 25px 0 22px;}
 .facility_card_slide_2 { display: none; }
 .facility_card_name { display: block; text-align:center; font-size:15px; font-size:1.5rem; line-height:21px; line-height:2.1rem; letter-spacing: 0.040em; color: #FFFFFF; }
 .facility_card_eng { display: block; text-align:center; font-size:12px; font-size:1.2rem; line-height:18px; line-height:1.8rem; letter-spacing: 0.040em; color: #9c9c9c; margin-top: 5px;}
 
-.facility_wrap .facility_card { max-width: 100%; height: 264px; overflow: hidden; }
+.facility_wrap .facility_card { max-width: 100%; height: 264px; overflow: hidden; background-repeat: no-repeat; background-size: cover;}
 .facility_wrap .facility_card:hover .facility_card_slide { top: 173px; }
 .facility_wrap .facility_card:hover .facility_card_slide_2 { top: 173px; position: relative; display: block; background: rgba(0,0,0,0.6); padding: 25px 0 22px; }
 
