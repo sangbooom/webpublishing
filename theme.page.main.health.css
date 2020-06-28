@@ -30,7 +30,7 @@
 
 /* 메인 비주얼메뉴*/
 .main_visual_wrap { font-family:'Nanum Barun Gothic'; }
-.main_visual_wrap .bg_img { position:absolute; height: 100%; background-image: url("../img/main_visual_bg.png"); background-repeat: no-repeat; background-position: center; background-size: cover; z-index:-2; }
+.main_visual_wrap .bg_img { position:absolute; height: 100%; background-image: url("img/main_visual_bg.png"); background-repeat: no-repeat; background-position: center; background-size: cover; z-index:-2; }
 .main_visual_wrap .bg_dim { position: absolute; height: 100%;  background-color: rgba(0, 0, 0, 0.5);  z-index: -1; }
 .main_visual_wrap .main_title_wrap { padding-top: 360px; padding-bottom: 342px; text-align: center; color: #FFFFFF; z-index: 1;}
 .main_visual_wrap .main_title_wrap .main_title_1 { font-size:30px; font-size:3.0rem; line-height: 36px; line-height: 3.6rem; letter-spacing: -0.025em; font-weight: 300;}
@@ -66,7 +66,7 @@
 
 .media_wrap { font-family:'Nanum Barun Gothic';}
 .media_wrap .media_content { padding-top: 76px; padding-bottom: 76px;}
-.media_wrap .media_bg_img { position:absolute; height: 100%; background-image: url("../img/media_bg.png"); background-position: center; background-size: cover; background-repeat: no-repeat; z-index:-2; }
+.media_wrap .media_bg_img { position:absolute; height: 100%; background-image: url("img/media_bg.png"); background-position: center; background-size: cover; background-repeat: no-repeat; z-index:-2; }
 .media_wrap .media_bg_dim { position:absolute;  height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: -1;}
 .media_wrap .intro { text-align: center; }
 .media_wrap .intro .intro_title { color: #FFFFFF; font-size:30px; font-size:3.0rem; line-height:36px; line-height:3.6rem; letter-spacing: 0.040em; font-family:'Open Sans'; font-weight: 700; }
